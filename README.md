@@ -8,4 +8,9 @@ be interupted once started, would only need a selection of what OS desiered do a
 The USB where given both Windows and Ubuntu workstation and server ISO to illustrate the option of choise, aswell as a DBAN ISO 
 that could be used to strip a device of all previouse data for a cleaner installation.
 
-The only issue that occured was with the Windows pointing from Grub.
+
+Once the USB is connected to the device, it will become read at a reboot as long as the device is configured to allow USB boot (this is changed in the bootload setup). From here the Grub panel will appear with the selected ISO that is provided. By choosing any of the choises, Grub will reboot the device aswell as point the bootloader towards the selected ISO, starting the automatical installation.
+
+
+The only issue that occured was with the Windows pointing from Grub, since we did not propelry specify what driver it should look for.
+The driver path is different when comparing to a Linux distro.
